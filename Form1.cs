@@ -23,7 +23,7 @@ namespace FlappyBirdV2
         SolidBrush greenBrush = new SolidBrush(Color.Black);
 
         //Variables
-        int gravity = 23;
+        int gravity = 18;
         int playerScore = 0;
         int pipeWidth = 40;
         int pipeHeight = 120;
@@ -212,7 +212,7 @@ namespace FlappyBirdV2
             time++;
             PlayerIntersection();
             SpawnPipes();
-            if (player1.Y < this.Height - player1.Height)
+            if (player1.Y < this.Height - player1.Height - 40)
             {
                 player1.Y += 3;
             }

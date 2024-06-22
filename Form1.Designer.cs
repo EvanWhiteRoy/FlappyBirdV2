@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(flappyBird));
             this.gameTimer = new System.Windows.Forms.Timer(this.components);
             this.subLabel = new System.Windows.Forms.Label();
             this.titleLabel = new System.Windows.Forms.Label();
@@ -81,6 +82,7 @@
             this.Controls.Add(this.titleLabel);
             this.Controls.Add(this.subLabel);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "flappyBird";
             this.Text = "Flappy Bird";
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.flappyBird_Paint);
